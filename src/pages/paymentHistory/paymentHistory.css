@@ -1,0 +1,52 @@
+.payment-history-main{
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 40px;
+}
+
+.payment-history-main .all-payments{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.payment-history-main .ind-transaction{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px -8px rgba(0,0,0,0.6);
+}
+
+.payment-history-main .nothing-in-payments{
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.payment-history-main .nothing-in-payments h3{
+    color: rgba(0,0,0,0.4);
+}
+
+.payment-history-main .payments-login-main{
+    display: flex;
+    align-items: center;
+    min-height: 30em;
+    width: 100%;
+    justify-content: center;
+    background-image: url('/src/images/payments.svg');
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 500px) {
+    .payment-history-main{
+        min-height: 50vh;
+    }
+}
